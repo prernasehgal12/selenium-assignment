@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
  
-public class RegisterTest {
+public class RegistrationForm {
  
     public static void main(String[] args) {
        
@@ -37,7 +37,7 @@ public class RegisterTest {
         stateInput.sendKeys("haryana");
  
         WebElement pincodeInput = driver.findElement(By.name("postalCode"));
-        pincodeInput.sendKeys("77777");
+        pincodeInput.sendKeys("888888");
  
        
         WebElement countryDropdown = driver.findElement(By.name("country"));
@@ -59,7 +59,7 @@ public class RegisterTest {
  
        
         try {
-            Thread.sleep(7000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
